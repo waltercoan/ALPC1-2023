@@ -10,6 +10,7 @@ resultado da média das turmas.
 print("Digite o numero de turmas")
 turmas = int(input())
 
+somamedias = 0
 for contaturma in range(turmas):
     print("Turma", contaturma+1)
     print("Digite o num de alunos")
@@ -22,3 +23,6 @@ for contaturma in range(turmas):
         soma = soma + nota
     media = soma / alunos
     print("A media e", media)
+    somamedias = somamedias + media
+mediaescola = somamedias / turmas
+print("A media da escola e", mediaescola)
